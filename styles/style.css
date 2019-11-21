@@ -1,9 +1,104 @@
-.ba-menu{
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway-Bold.ttf);
+  font-weight: bold; }
+
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway-Regular.ttf);
+  font-weight: normal; }
+
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway-Light.ttf);
+  font-weight: lighter; }
+
+.ba-banner {
+  height: 100vh; }
+
+.ba-hero {
+  height: 100%;
+  background-image: url(../img/hearo.jpeg);
+  background-size: cover;
+  background-color: #000;
+  padding: 9vh 0 7.5vh;
+  color: #fff; }
+  .ba-hero__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .ba-hero__top {
     display: flex;
     align-items: center;
-}
+    justify-content: space-between; }
+  .ba-hero__middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right; }
+  .ba-hero__scroll {
+    display: inline-block;
+    height: 67px;
+    width: 45px;
+    background-image: url(../img/scroll.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .ba-hero__bottom {
+    margin: 0 auto; }
+
+.ba-logo {
+  font-family: Raleway-ExtraBold;
+  color: #fff;
+  font-weight: 400; }
+
+.ba-menu {
+  display: flex;
+  align-items: center;
+  list-style: none; }
 
 .ba-menu__link {
-    color: inherit;
-    text-decoration: none;
-}
+  color: inherit;
+  text-decoration: none; }
+
+.ba-product {
+  text-align: center; }
+  .ba-product__thumbs {
+    padding: 0 1em; }
+  .ba-product__img {
+    max-width: 100%; }
+
+.ba-section {
+  padding: 40px 0; }
+  .ba-section-header {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .ba-section__title, .ba-team-member__name {
+    font-size: 1.875rem;
+    font-weight: 800; }
+  .ba-section__title_white {
+    color: #fff; }
+  .ba-section__desc {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: .5rem; }
+  .ba-section__desc_uppercase {
+    text-transform: uppercase; }
+
+.ba-team {
+  background-color: #ededed; }
+  .ba-team-member {
+    text-align: center;
+    text-transform: uppercase; }
+    .ba-team-member__thumb {
+      width: 216px;
+      height: 216px;
+      overflow: hidden;
+      margin: 0 auto;
+      border-radius: 50%; }
+    .ba-team-member__img {
+      border-radius: 50%;
+      transition: transfom .3s; }
+      .ba-team-member__img:hover {
+        transform: scale(1.2); }
